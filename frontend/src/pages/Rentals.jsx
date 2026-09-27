@@ -9,7 +9,7 @@ const Rentals = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/cars')
+        fetch('/api/cars')
             .then(res => res.json())
             .then(data => {
                 setCars(data);
