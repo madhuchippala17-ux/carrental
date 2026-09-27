@@ -9,7 +9,7 @@ const Rentals = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/api/cars')
+        fetch('https://carrental-4-pwqa.onrender.com/api/cars')
             .then(res => res.json())
             .then(data => {
                 setCars(data);
